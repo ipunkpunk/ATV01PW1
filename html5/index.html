@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <!--metadados para SED e compatibilidade-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recursos em HTML5">
+    <meta name="author" content="Carlos Henrique">
+    <title>Pagina sobre recursos em HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!--cabeçalho da pagina-->
+   <header>
+    <h1>Explorando recursos em HTML5</h1>
+    <!--Navegaçao com links âncora para diferentes seçoes-->
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/21cde320-1c91-4c66-824b-d25f0c226f28/dc28pa7-aee4e54a-1cbe-44de-a11a-74c9e9a901f3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxY2RlMzIwLTFjOTEtNGM2Ni04MjRiLWQyNWYwYzIyNmYyOFwvZGMyOHBhNy1hZWU0ZTU0YS0xY2JlLTQ0ZGUtYTExYS03NGM5ZTlhOTAxZjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b9fijbINfqm1EH0VPr1jdAcZMA5dicIg-FByW2f-r5w" alt="doki doki" width="99px">
+    <nav>
+        <a href="#paragrafo">Paragrafos</a>
+        <a href="#listas">Listas</a>
+        <a href="#tabela">Tabela</a>
+        <a href="#formulario">Formulario</a>
+        <a href="#midia">Midias</a>
+    </nav>
+   </header>
+   <!--Primera Seçao: Demonstrar paragrafos e formataçao de texto-->
+   <section id="paragrafo"> 
+     <h2>Parágrafo e Formatação de Texto</h2>
+     <!--um paragrafo simples-->
+     <p>Este é um parágrafo basico. O elemonto <code>&lt;p&gt;</code> é usado para criar paragrafo em HTML</p>
+
+     <!--Texto em negrito e italico-->
+     <p><strong>Texto em Negrito</strong> pode ser criado com o elemento <code>&lt;strong&gt;</code> ou <code>&lt;b&gt;</code>.</p>
+     <p><em>Texto italico</em> pode ser criado o elemento <code>&lt;em&gt;</code> ou <code>&lt; i &gt;</code>.</p>
+     <!--Linha horizontal-->
+     <hr>
+     <p>Esta linha horizontal foi criada com o elemento <code>&lt;hr&gt;</code>, que é usado para separar secões de conteúdo.</p>
+
+   </section>
+   
+   <!--segunda seçao: listas ordenadas e Nao ordenadas-->
+   <section id="listas">
+   <h2>Listas</h2>
+
+   <h3>Lista nao Ordenada</h3>
+  
+  <img class="Zomb" src="blackp.png" width="170">
+ 
+   <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+   </ul>
+   <p>A lista acima é uma <strong> lista nao ordenada</strong>, criada com <code>&lt;\ul&gt;</code></code></p>
+
+   <!--Lista ordenada-->
+   <ol>
+    <li>Primeiro item</li>
+      <li>Segundo Item</li>
+       <li>Terceiro item</li>
+
+   </ol>
+   <p>a lista acima é uma lista <strong> ordernada</strong>, criada com <code>&lt;ol&gt;</code>.</p>
+
+
+
+  </section>
+
+  <!--Terceira Seção: Tabela basica-->
+  <hr>
+  <section id="tabela">
+   
+    <h2> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;Tabela 
+
+    </h2>
+    <table border="1">
+        <caption>Exemplo de Tabela</caption>
+        <thead>
+             <tr>
+                <th>Nome</th>  
+                 <th> Idade</th>
+                  <th> Profissão</th>
+             </tr>
+        
+            </thead>
+        <tbody>
+          <img src="acb2e806575e2f1e188f2fefc322504f-removebg-preview.png" alt="yuriimg" width="200">
+
+          <tr>
+            <td>Morigan</td>
+            <td> ???</td>
+            <td>Personagem</td>
+            </tr>
+            <tr>
+              <td>Lilith</td>
+              <td>???</td>
+              <td>Personagem</td>
+              </tr>
+        </tbody>
+    </table>
+    <p id="iki">Esta tabela é criada com o elemento <code>&lt;table&gt;</code><br><br>Os cabeçalhos são definidos com <code>&lt;th&gt;</code> e as celulas com o <code>&lt;td&gt;</code></p>
+
+  </section>
+<!--Quarta Seçao-->
+   <section id="formulario">
+    <hr>
+    <h2>Formulario<h2>
+      <form action="#" method="post">
+        <label for="nome">nome</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <!--Campo de Emails-->
+        <label for="email">Email</label>
+        <input type="email">
+
+        <!--Caixa de seleçao (checkbox)-->
+        <label for="aceito">Aceito os termos</label>
+        <input type="checkbox" id="aceito" name="aceito"> <br><br>
+
+        <!--Botao de envio-->
+        <input type="submit" value="Enviar">
+
+     </form>
+     <p>este formulario contém diferentes tipos de entrada de dados, como <code>&lt;input&gt;</code> e <code>&lt;label&gt;</code></p>
+     <hr>
+     </section>
+
+     <!--Quinta Seçao-->
+     <section>
+
+
+<!--Videos-->
+<section id="midia"> 
+  <h2>Midia</h2>
+<!--Imagem-->
+<h3>Imagem</h3>
+
+<p>Esta imagem é inserida a partir do comando <code>&lt;img&gt;</code>, que requer o atributo <code>&lt;src&gt;</code></p>
+  <img src="Yuri._Doki.Doki.Literature.Club__.600.2816756-removebg-preview.png" alt="Exemplo de imgaem">
+<h3>Videos</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VfLRcPelZ-w?si=igJvPHRRbb9vlJqK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<video controls width="250">
+<source src="https://www.w3schools.com/html/mov_bbb.mp4">
+</video>
+<p>o video acima é incorporado por <code>&lt;video&gt;</code>e a fonte do video é definida por <code>&lt;Source&gt;</code>.</p>
+
+     </section>
+ <!--rodape da pagina-->
+     <footer>
+     <p>&copy; 2024 Desenvolvido por Carlos</p>
+    </footer>
+</body>
+</html>

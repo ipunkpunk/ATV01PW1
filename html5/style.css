@@ -1,0 +1,59 @@
+body{
+    color: violet;
+    background-image: url(https://wallpaperswide.com/download/purple_circles-wallpaper-3554x1999.jpg);
+   
+}
+
+.Zomb{
+    position:absolute;
+    top: 481px;
+    right: 500px;    
+    
+    
+    
+    
+}
+
+header{
+    text-align: center;
+    font-family: fantasy;
+  
+}
+
+#paragrafo{
+    text-align: center;
+    
+}
+
+#listas{
+    text-align: center;
+    list-style-position: inside;
+    
+    
+}
+
+#tabela{
+    
+    margin-left: 51%;
+    
+}
+
+#formulario{
+    text-align: center;
+}
+
+
+#iki{
+    margin-right: 50%;
+}
+
+
+#midia{
+    text-align: center;
+}
+
+hr{
+    border-style: groove;
+    border-color: purple;
+    
+}
